@@ -1,13 +1,11 @@
-# Inline-lang Extension For Quarto
+# Default-lang Extension For Quarto
 
-_TODO_: Add a short description of your extension.
+Default language extension for Quarto. Sets the default language for unmarked inline code / code blocks.
 
 ## Installing
 
-_TODO_: Replace the `<github-organization>` with your GitHub organization.
-
 ```bash
-quarto add <github-organization>/inline-lang
+quarto add jtlandis/default-lang
 ```
 
 This will install the extension under the `_extensions` subdirectory.
@@ -15,9 +13,14 @@ If you're using version control, you will want to check in this directory.
 
 ## Using
 
-_TODO_: Describe how to use your extension.
+add to the yaml header:
+
+```yaml
+filters:
+  - default-lang
+default-code-lang: r # or python, or whatever
+```
 
 ## Example
 
 Here is the source code for a minimal example: [example.qmd](example.qmd).
-

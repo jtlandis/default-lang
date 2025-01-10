@@ -1,0 +1,39 @@
+---
+title: "Default-lang Example"
+format: html
+filters:
+  - deefault-lang
+default-code-lang: rust
+---
+
+
+
+This filter allows for inline language syntax highlighting.
+
+<!-- All unnamed code blocks will take the language -->
+<!-- of the 'code-lang' metadata field. -->
+`fn main() -> anyhow::Result<()>`
+
+<!-- Code already annotated with a class is unaffected -->
+`y <- 1:10`{.r}
+
+```{r}
+
+1:10
+
+```
+
+<!-- since 'none' is not a valid language -->
+<!-- this block will not be highlighted -->
+```none
+This is some raw text.
+No formatting in this block.
+```
+
+<!-- This block will be highlighted as Rust -->
+```
+pub struct Person {
+    pub name: String,
+    pub age: u32,
+}
+```
