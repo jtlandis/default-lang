@@ -1,7 +1,7 @@
 title: Default-lang
 author: jtlandis
-version: 1.0.0
+version: 1.0.1
 quarto-required: ">=1.5.0"
 contributes:
   filters:
-    - inline-lang.lua
+    - default-lang.lua

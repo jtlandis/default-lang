@@ -2,7 +2,7 @@
 title: "Default-lang Example"
 format: html
 filters:
-  - deefault-lang
+  - default-lang
 default-code-lang: rust
 ---
 
